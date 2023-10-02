@@ -1,0 +1,235 @@
+/* COMMON CSS START  */
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Open+Sans&family=Ubuntu:wght@300;400;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primaryFont: 'Ubuntu', sans-serif;
+    --secondaryFont: 'Open Sans', sans-serif;
+    --multiFont: 'Abril Fatface', cursive;
+    --primaryColor: #0f2f44 ;
+    --secondaryColor: #8484bf ;
+    --multiColor: #ffc712;
+    --footerColor: #777777;
+    --letterColor: #222222;
+    --letterColor2: #ffffff;
+}
+a{
+    text-decoration: none;
+}
+ul li{
+    list-style: none;
+}
+.container{
+    width: 1170px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.align-center{
+    align-items: center;
+}
+.btn{
+    background-color: var(--secondaryColor);
+    color: var(--letterColor2) ;
+    display: inline-block;
+    padding: 15px 20px;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: var(--primaryFont);
+}
+/* COMMON CSS END  */
+
+/* HEADER START  */
+header{
+    background-color: var(--primaryColor);
+    color: var(--letterColor2);
+    font-family: var(--primaryFont);
+    padding: 18px 0px;
+    height: 50px;
+}
+
+header .welcome,
+header .opening{
+    width: 50%;
+}
+
+header .welcome p{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+header .opening p{
+    font-size: 16px;
+    font-weight: 400;
+    text-align: right;
+}
+/* HEADER END HERE  */
+
+/* NAVBAR START HERE  */
+nav{
+    height: 94px;
+}
+nav .logo{
+    width: 40%;
+    padding: 30px 0px;
+}
+nav .menu ul li{
+    display: inline-block;
+}
+nav .menu{
+    text-align: right;
+    width: 60%;
+    
+}
+nav .menu ul li a{
+    font-size: 16px ;
+    color: var(--letterColor) ;
+    font-weight: 500 ;
+    font-family: var(--primaryFont);
+    padding: 40px 18px;
+    display: block;
+    transition: 450ms;
+}
+nav .menu ul li:hover a{
+    color: var(--multiColor);
+}
+nav .menu span{
+    font-size: 14px;
+    color: var(--footerColor);
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    /* background-color: red; */
+    text-align: center;
+    display: inline-block;
+    border: 1px solid #77777786;
+    line-height: 30px;
+    cursor: pointer;
+}
+/* NAVBAR END HERE  */
+
+/* BANNER START HERE  */
+#banner{
+    background-image: url(../image/banner.jpg);
+    height: 601px;
+    background-size: cover;
+    background-position: center;
+}
+#banner .container{
+    height: 100%;
+}
+#banner .row{
+    height: 100%;
+    
+}
+#banner .banner_cnt{
+    width: 40%;
+
+}
+#banner .banner_cnt h2{
+    font-size: 50px ;
+    font-weight: 300 ;
+    font-family: var(--primaryFont) ;
+    color: var(--primaryColor);
+}
+#banner .banner_cnt h1{
+    font-size: 80px;
+    font-weight: 400 ;
+    font-family: var(--multiFont) ;
+    color: var(--primaryColor) ;
+    text-transform: uppercase;
+    line-height: 68px;
+}
+#banner .banner_cnt h3{
+    font-size: 32px ;
+    font-weight: 400 ;
+    font-family: var(--primaryFont) ;
+    color: var(--secondaryColor) ;
+    letter-spacing: 14px;
+    line-height: 58px;
+}
+#banner .banner_cnt p{
+    font-size: 14px ;
+    font-weight: 400 ;
+    font-family: var(--secondaryFont) ;
+    color: #666666 ;
+    padding: 22px 0px 27px 0px;
+}
+       
+
+
+#banner .banner_cnt .videoBtn{
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    margin-left: 20px;
+    color: var(--secondaryColor);
+    background-color: var(--letterColor2);
+    font-size: 21px;
+    display: inline-block;
+    line-height: 50px;
+    text-align: center;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.048) 0px 2px 16px 0px;
+}
+/* BANNER END HERE  */
+/* ABOUT START HERE  */
+#about{
+    height: 718px;
+    width: 100%;
+    padding: 100px 0px;
+}
+#about .about_cnt{
+    width: 600px;
+
+}
+#about .about_cnt h5{
+    font-size: 14px ;
+    font-weight: 300 ;
+    font-family: var(--primaryFont);
+    color: var(--primaryColor) ;
+}
+#about .about_cnt h2{
+    font-size: 32px ;
+    font-weight: 400 ;
+    font-family: var(--multiFont) ;
+    color: var(--primaryColor) ;
+}
+#about .about_cnt p{
+    font-size: 16px ;
+    font-weight: 400 ;
+    font-family: var(--secondaryFont) ;
+    color: var(--primaryColor) ;
+    padding: 30px 0px;
+    line-height: 24px;
+    margin-top: 0px;
+}
+#about .about_cnt .about_2{
+    font-size: 16px ;
+    font-weight: 400 ;
+    font-family: var(--secondaryFont) ;
+    color: var(--primaryColor) ;
+    line-height: 42px;
+    padding-left: 30px;
+}
+#about .about_cnt .about_img{
+    align-items: right;
+}
+#about .about_btn{
+    padding-top: 30px;
+}
+#about .btn{
+    background-color: var(--multiColor);
+    color: var(--primaryColor);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-right: 20px;
+    transition: 450ms;
+}
+#about .btn:hover{
+    background-color: var(--letterColor2);
+}
